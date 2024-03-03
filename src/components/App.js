@@ -1,13 +1,32 @@
+// App.jsx
 import React from "react";
-import blogData from "../data/blog";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
 
-console.log(blogData);
+function App({ preview }) {
+  const name = "Josephine Net";
+  const about = "About this blog";
+  const posts = [
+    {
+      id: 1,
+      title: "My first blog",
+      date: "February 24, 2024",
+      preview: "First preview"
+    },
+    {
+      id: 2,
+      title: "my second blog",
+      date: "March 4, 2024",
+      preview: "third"
+    }
+  ];
 
-function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <Header name={name} />
+      <About image="https://via.placeholder.com/215" about={about} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
