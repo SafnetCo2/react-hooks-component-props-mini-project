@@ -12,13 +12,19 @@ function App({ preview }) {
       id: 1,
       title: "My first blog",
       date: "February 24, 2024",
-      preview: "First preview"
+      preview: "Learn with me coding wow!"
     },
     {
       id: 2,
       title: "my second blog",
       date: "March 4, 2024",
-      preview: "third"
+      preview: "Come help me to learn"
+    },
+    {
+      id: 2,
+      title: "my second blog",
+      date: "March 4, 2024",
+      preview: "Love coding though still learning"
     }
   ];
 
